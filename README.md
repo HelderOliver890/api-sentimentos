@@ -21,3 +21,4 @@ https://api-sentimentos-latest.onrender.com
 # Endpoints
 GET /
 POST /sentimento
+
