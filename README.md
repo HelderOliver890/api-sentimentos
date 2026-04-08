@@ -1,11 +1,21 @@
+# API de análise de sentimentos
 
-#API de Sentimentos
+# Descrição
+API REST feita com FastAPI para análise simples de sentimentos.
 
-API REST desenvolvida com FastAPI.
+# Como executar
 
-# Como funiona
+# Local
 pip install -r requirements.txt
 uvicorn main:app --reload
 
+# Docker
+docker build -t api-sentimentos .
+docker run -p 8000:8000 api-sentimentos
+
 # Deploy
-https://helderolv8521.onrender.com/
+https://api-sentimentos-latest.onrender.com
+
+# Endpoints
+GET /
+POST /sentimento
