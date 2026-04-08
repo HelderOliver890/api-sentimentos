@@ -1,7 +1,7 @@
 # API de análise de sentimentos
 
 # Descrição
-API REST feita com FastAPI para análise simples de sentimentos.
+API REST com FastAPI para análise de sentimentos.
 
 # Como executar
 
