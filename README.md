@@ -22,3 +22,4 @@ https://api-sentimentos-latest.onrender.com
 GET /
 POST /sentimento
 
+f
