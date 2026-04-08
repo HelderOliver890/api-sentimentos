@@ -20,3 +20,4 @@ jobs:
 
       - name: Push da imagem
         run: docker push helderolv8521/api-sentimentos:latest
+
