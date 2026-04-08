@@ -1,5 +1,3 @@
-name: CI Pipeline
-
 on:
   push:
     branches: [ "main" ]
@@ -12,5 +10,11 @@ jobs:
       - name: Clonar código
         uses: actions/checkout@v3
 
+      - name: Login no Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
       - name: Build Docker
-        run: docker build -t api-sentimentos .
+        run: docker build -t helderolv8521/api-sentimentos:latest .
+
+      - name: Push para Docker Hub
+        run: docker push helderolv8521/api-sentimentos:latest
