@@ -1,3 +1,4 @@
+#Aluno: Helder De Oliveira Barros
 # API de análise de sentimentos
 
 # Descrição
